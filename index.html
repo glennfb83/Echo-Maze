@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Echo Maze</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="ui">
+    <h1>Echo Maze</h1>
+    <div id="controls">
+      <div>Move: <strong>Arrow keys / WASD</strong></div>
+      <div>Spawn Echo (replays last 3s): <strong>Space</strong></div>
+      <div>Restart level: <strong>R</strong></div>
+      <div>Level: <span id="level-num">1</span></div>
+      <div id="message"></div>
+    </div>
+    <button id="next-level" style="display:none">Next Level</button>
+  </div>
+
+  <canvas id="c" width="800" height="560"></canvas>
+
+  <script src="game.js"></script>
+</body>
+</html>
