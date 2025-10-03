@@ -1,0 +1,18 @@
+:root{
+  --bg:#0f1724;
+  --panel:#0b1220;
+  --accent:#8bd3c7;
+  --muted:#a8b3c2;
+  --tile:#15232e;
+  --tile2:#1f3340;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#e6eef6;background:linear-gradient(180deg,var(--bg),#07111a);display:flex;align-items:flex-start;justify-content:center;padding:24px}
+#ui{position:absolute;left:24px;top:18px;padding:12px;background:rgba(255,255,255,0.02);border-radius:10px;border:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(6px);min-width:220px}
+#ui h1{margin:0 0 8px 0;font-size:18px;color:var(--accent)}
+#controls div{font-size:13px;color:var(--muted);margin:4px 0}
+#message{margin-top:8px;color:#ffdca3;font-weight:600}
+canvas{border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6);background:linear-gradient(180deg,var(--tile),var(--tile2));display:block}
+button{margin-top:8px;padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#052021;font-weight:700;cursor:pointer}
+button:active{transform:translateY(1px)}
